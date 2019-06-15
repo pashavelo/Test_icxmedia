@@ -2,6 +2,7 @@ package icxmedia;
 
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -17,6 +18,7 @@ public class precondition {
         driver= new ChromeDriver();
         //Open window in full size
         driver.manage().window().maximize();
-
     }
+
+
 }

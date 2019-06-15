@@ -12,6 +12,8 @@ public class Registration extends precondition {
     @Test
 
     public void registration_test() throws InterruptedException {
+
+        //WebDriverWait wait= new WebDriverWait(driver,20);
         //Go to web site
         driver.get("https://www.icxmedia.com/");
         System.out.println(driver.getTitle());
@@ -40,6 +42,7 @@ public class Registration extends precondition {
         WebElement LetsGetStarted_Button = driver.findElement(By.xpath("//button[@class='auth-submit stretch']"));
         LetsGetStarted_Button.click();
         System.out.println(driver.getTitle());
+        //сделать проверку вошли ли мы в кабинет
 
         driver.quit();
     }
